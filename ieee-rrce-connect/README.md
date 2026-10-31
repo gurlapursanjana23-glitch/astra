@@ -29,14 +29,13 @@ This upgrade transitions the website to a **clean, institutional, IEEE technolog
 
 ---
 
-## 🌐 Localhost Access Links
+## 🌐 Live Website & Access Links
 
-The local development server is actively running:
+- 🚀 **Live Production Website (GitHub Pages):**  
+  👉 **[https://gurlapursanjana23-glitch.github.io/astra/](https://gurlapursanjana23-glitch.github.io/astra/)**
 
-👉 **[http://localhost:5500/](http://localhost:5500/)**  
-*(Alternative IP address: [http://127.0.0.1:5500/](http://127.0.0.1:5500/))*
-
-> **Folder Mirror:** You can also access the subfolder at [http://localhost:5500/ieee-rrce-connect/](http://localhost:5500/ieee-rrce-connect/).
+- 💻 **Local Development Server (Only accessible on your computer when VS Code Live Server is active):**  
+  `http://localhost:5500/` *(or `http://127.0.0.1:5500/`)*
 
 ---
 
