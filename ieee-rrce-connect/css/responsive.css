@@ -1,0 +1,269 @@
+/* ==========================================================================
+   IEEE RRCE CONNECTS - Responsive Stylesheet
+   Breakpoints: 1200px, 992px, 768px, 576px, 430px, 375px
+   Tested for: Desktop (1440px), Tablet (768px), Mobile (430px, 375px)
+   ========================================================================== */
+
+/* --- Large Desktops & Standard Laptops (<= 1200px) --- */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 2.85rem;
+  }
+  .about-card.col-8 {
+    grid-column: span 12;
+  }
+  .about-card.col-4 {
+    grid-column: span 12;
+  }
+  .dashboard-stats-strip {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .dash-chart-card {
+    grid-column: span 12;
+  }
+  .dash-accolades-card {
+    grid-column: span 12;
+  }
+  .footer-top {
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+  .footer-top .footer-col:last-child {
+    grid-column: span 3;
+  }
+}
+
+/* --- Tablets & Medium Screens (<= 992px) --- */
+@media (max-width: 992px) {
+  :root {
+    --header-height: 80px;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    background: #FFFFFF;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 20px;
+    gap: 6px;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform var(--transition-normal);
+    z-index: 999;
+    border-top: 1px solid var(--border-subtle);
+    box-shadow: 0 10px 30px rgba(7, 27, 51, 0.12);
+  }
+
+  .nav-menu.active {
+    transform: translateX(0);
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border-radius: var(--radius-sm);
+  }
+
+  .nav-actions .btn-sm {
+    display: none;
+  }
+
+  .nav-mobile-cta {
+    display: block !important;
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .hero-section {
+    padding: 70px 0 60px 0;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-stats-strip {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .opp-controls-card {
+    grid-template-columns: 1fr;
+  }
+
+  .lightbox-btn.prev {
+    left: 10px;
+  }
+  .lightbox-btn.next {
+    right: 10px;
+  }
+}
+
+/* --- Mobile Devices (<= 768px) --- */
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 1.95rem;
+  }
+
+  .hero-title {
+    font-size: 2.15rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .events-grid,
+  .chapters-grid,
+  .projects-grid,
+  .opp-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-stats-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .footer-top .footer-col:last-child {
+    grid-column: span 1;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .toast-container {
+    left: 16px;
+    right: 16px;
+    top: 90px;
+  }
+
+  .toast {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .back-to-top-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* --- Compact Mobile Devices (<= 430px and 375px) --- */
+@media (max-width: 430px) {
+  :root {
+    --header-height: 74px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .brand-lockup {
+    gap: 8px;
+  }
+
+  .logo-container {
+    gap: 8px;
+  }
+
+  .college-logo-img {
+    height: 38px;
+  }
+
+  .ieee-logo-img {
+    height: 28px;
+  }
+
+  .brand-divider {
+    height: 28px;
+  }
+
+  .brand-title {
+    font-size: 1.02rem;
+  }
+
+  .brand-subtitle {
+    display: none; /* Hide subtitle on compact viewports to prevent wrapping */
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.05rem;
+  }
+
+  .hero-stats-strip {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+
+  .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vm-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info-card,
+  .forms-card {
+    padding: 24px 18px;
+  }
+
+  .modal-card {
+    padding: 24px 18px;
+  }
+}
+
+/* Extra small mobile (<= 375px) */
+@media (max-width: 375px) {
+  .college-logo-img {
+    height: 34px;
+  }
+  .ieee-logo-img {
+    height: 24px;
+  }
+  .brand-title {
+    font-size: 0.92rem;
+  }
+}
